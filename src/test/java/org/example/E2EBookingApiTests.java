@@ -22,7 +22,7 @@ public class E2EBookingApiTests {
         var faker = TestDataHelper.getFaker();
 
         // create booking
-        var createBookingApiResponse = createBookingAPI.createNewBooking(getData(faker.name().firstName(), faker.name().lastName(), Integer.parseInt(faker.regexify("[1-9]{3}")))).then().assertThat().statusCode(201)
+        var createBookingApiResponse = createBookingAPI.createNewBooking(getData(faker.name().firstName(), faker.name().lastName(), Integer.parseInt(faker.regexify("[1-9]{3}")))).then().assertThat().statusCode(200)
                 .body("bookingid", is(not(equalTo(0))));
 
         int bookingId = createBookingApiResponse.extract().jsonPath().getInt("bookingid");
