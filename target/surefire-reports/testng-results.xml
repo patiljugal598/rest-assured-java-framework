@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-05T23:24:21 IST" name="All Test Suite" finished-at="2024-10-05T23:24:43 IST" duration-ms="22749">
+    <groups>
+    </groups>
+    <test started-at="2024-10-05T23:24:21 IST" name="C:/Users/patil/IdeaProjects/RestAssured011024" finished-at="2024-10-05T23:24:43 IST" duration-ms="22749">
+      <class name="org.example.E2EBookingApiTests">
+        <test-method signature="e2eBookingTest()[pri:0, instance:org.example.E2EBookingApiTests@68e62ca4]" started-at="2024-10-05T23:24:21 IST" name="e2eBookingTest" finished-at="2024-10-05T23:24:43 IST" duration-ms="22478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e2eBookingTest -->
+      </class> <!-- org.example.E2EBookingApiTests -->
+    </test> <!-- C:/Users/patil/IdeaProjects/RestAssured011024 -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

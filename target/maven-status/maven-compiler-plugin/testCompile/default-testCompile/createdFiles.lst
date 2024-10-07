@@ -1,0 +1,5 @@
+org\example\E2EBookingApiTests.class
+org\example\CreateBookingTests.class
+org\example\UpdateBookingApiTests.class
+org\example\GetBookingApiTests.class
+org\example\DeleteBookingApiTests.class

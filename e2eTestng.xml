@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+    <test verbose="2" preserve-order="true" name="C:/Users/patil/IdeaProjects/RestAssured011024">
+        <classes>
+            <class name="org.example.E2EBookingApiTests">
+                <methods>
+                    <include name="e2eBookingTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.example.listeners.AnnotationTransformer"></listener>
+    </listeners>
+</suite>

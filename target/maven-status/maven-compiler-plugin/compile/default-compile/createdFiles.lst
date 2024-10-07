@@ -1,0 +1,15 @@
+org\example\utils\PropertyUtils.class
+org\example\pojo\response\CreateResponseBooking.class
+org\example\api\GetBookingAPI.class
+org\example\pojo\request\CreateRequestBooking.class
+org\example\pojo\response\Booking.class
+org\example\http\BaseAPI.class
+org\example\http\BaseAPI$1.class
+org\example\pojo\response\Bookingdates.class
+org\example\constants\ApiPaths.class
+org\example\api\CreateBookingAPI.class
+org\example\api\UpdateBookingAPI.class
+org\example\api\DeleteBookingAPI.class
+org\example\utils\TestDataHelper.class
+org\example\pojo\request\BookingDates.class
+org\example\utils\ConfigLoader.class
