@@ -18,7 +18,7 @@
   </properties>
   <profiles>
     <profile>
-      <id>E2E</id>
+      <id>Regression</id>
       <build>
         <plugins>
           <plugin>
@@ -47,7 +47,7 @@
       </build>
     </profile>
     <profile>
-      <id>ALL</id>
+      <id>Sanity</id>
       <build>
         <plugins>
           <plugin>
