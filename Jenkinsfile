@@ -1,12 +1,17 @@
 pipeline {
     agent any
-    tools {
+/*    tools {
         maven 'Maven'
+    }*/
+
+    tools {
+        dockerTool 'Docker'
     }
     stages {
         stage('Build') {
             steps {
-                bat "mvn clean install -DskipTests"
+           //     bat "mvn clean install -DskipTests"
+                bat "docker build -t rest-assured-testng ."
             }
         }
 
@@ -14,7 +19,8 @@ pipeline {
             steps {
                 script {
                     catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                        bat "mvn clean test -P${profile}"
+                     //   bat "mvn clean test -P${profile}"
+                        bat "docker run -e MAVEN_PROFILE=${profile} -v \"\$(pwd)/allure-results:/app/allure-results\" rest-assured-testng"
                     }
                 }
             }
