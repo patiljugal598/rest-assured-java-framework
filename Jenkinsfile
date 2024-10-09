@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                        bat "mvn clean test -PRegression"
+                        bat "mvn clean test -P${profile}"
                     }
                 }
             }
