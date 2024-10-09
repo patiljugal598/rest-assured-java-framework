@@ -20,8 +20,7 @@ pipeline {
                 script {
                     catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
                      //   bat "mvn clean test -P${profile}"
-                        bat "docker run -e MAVEN_PROFILE=${profile} -v \$(pwd)/allure-results:/app/allure-results rest-assured-testng"
-                    }
+                        bat "docker run -e MAVEN_PROFILE=Regression -v \"%cd%\\allure-results:/app/allure-results\" rest-assured-testng"                    }
                 }
             }
         }
